@@ -1,0 +1,90 @@
+@import '../abstracs/colors.scss';
+
+.container{
+    display: flex;
+    background-color: $primary-blue;
+    color: $primary-white;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    width: clamp(37rem, 100vw, 138rem);
+    font-size: clamp(1rem,100%,1.6rem);
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button{
+    display: flex;
+    
+    &input[type="radio"] {
+        display: none;
+        
+        &:checked + label{
+            color: $primary-orange;
+            cursor: pointer;
+        }
+        
+    }
+    label{
+       
+        padding-left: 2rem;
+        
+
+    }
+    
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: (1rem,2vw,2rem);
+    &>svg{
+        color: $prmary-green;
+        font-size: clamp(2rem,5vw,3rem);
+        padding-right: 0.5rem;
+        &:hover{
+            cursor: pointer;
+            color: white;
+        }
+    }
+    &>div{
+        background-color: $primary-white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 3rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        &>img{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 2rem;
+           
+        }
+    }
+    input[type="radio"] {
+        display: none;
+        
+    }
+    label{
+
+        padding-left: 0.1rem;
+        &:hover{
+            cursor: pointer;
+        
+        }
+
+    }
+    
+    
+}

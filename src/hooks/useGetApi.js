@@ -12,7 +12,7 @@ const useGetApi = (API) => {
         setError('');
         if(API){
             axios.get(API)
-            .then(responsive => setCharacters(responsive))
+            .then(responsive => setCharacters(responsive.data))
             .catch(error => {setError(error); setLoading(false)})
 
         }
