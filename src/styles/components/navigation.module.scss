@@ -4,11 +4,14 @@
     display: flex;
     background-color: $primary-blue;
     color: $primary-white;
-    height: 6rem;
+    height: 10rem;
     align-items: center;
     justify-content: space-between;
-    width: clamp(37rem, 100vw, 138rem);
+    flex-flow: row wrap;
+    row-gap: 1rem;
     font-size: clamp(1rem,100%,1.6rem);
+    padding: 0 2rem;
+    
 }
 
 .menu{
@@ -16,6 +19,13 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    row-gap: 1rem;
+    &>div{
+        &>span{
+            padding-left: 2rem;
+        }
+    }
+    
 }
 
 .button{
@@ -23,9 +33,10 @@
     
     &input[type="radio"] {
         display: none;
+        color: $primary-white;
         
         &:checked + label{
-            color: $primary-orange;
+            border-top: $primary-orange;
             cursor: pointer;
         }
         
@@ -44,9 +55,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: (1rem,2vw,2rem);
+    padding-left: 2rem;
     &>svg{
-        color: $prmary-green;
+        color: $primary-green;
         font-size: clamp(2rem,5vw,3rem);
         padding-right: 0.5rem;
         &:hover{

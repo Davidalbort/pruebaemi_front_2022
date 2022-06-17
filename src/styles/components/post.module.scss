@@ -1,0 +1,89 @@
+@import '../abstracs/colors.scss';
+
+.container{
+   
+    flex-direction: column;
+    
+}
+
+.input{
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 1rem 0rem 2rem;
+    padding-top: 0.5rem;
+    width: -webkit-fill-available;
+   
+
+    
+}
+
+.image{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+    border: solid $primary-green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 4rem;
+    }
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+
+.text{
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+    border-bottom: solid 0.1rem gray;
+    width: inherit;
+    & > input{
+        border: none;
+        width: inherit;
+        
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    align-items: center;
+    padding: 0.5rem 0 0 0;
+    & div{
+        
+        
+        & > svg{
+            margin-left: 0.5rem;
+            color: $primary-green;
+            &:hover{
+                cursor: pointer;
+                color: $primary-blue;
+            }
+        }
+        & > button{
+            width: 6rem;
+            background-color: $primary-green;
+            color: $primary-white;
+            border-radius: 1rem;
+            border: none;
+            &:hover{
+                cursor: pointer;
+                color: $primary-blue;
+            }
+        }
+    }
+}
+
+.card{
+    overflow-y: scroll;
+    height: 50rem;
+    margin-top: 2rem;
+}

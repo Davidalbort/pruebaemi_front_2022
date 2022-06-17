@@ -1,0 +1,25 @@
+@import '../abstracs/colors.scss';
+
+.container{
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.post{
+    width: 53rem;
+}
+
+.side{
+    width: 53rem;
+}
+

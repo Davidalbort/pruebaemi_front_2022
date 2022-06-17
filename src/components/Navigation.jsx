@@ -5,21 +5,22 @@ import styles from '../styles/components/navigation.module.scss'
 const Navigation = () => {
   return (
     <nav className={styles.container}>
-        <div></div>
         <section className={styles.menu}>
           <div className="nav-menu-title">
-            <span> Tiempo de trabajo activo</span>
+            <span> Tiempo de trabajo activo :</span>
             <span> 5:50</span>
           </div>
           <div className={styles.button}>
-            <label form='oficina'>Oficina</label>
-            <input id='oficina' type="radio"/>
+            <label form='oficina'>
+              Oficina
+            </label>
+              <input id='oficina' type="radio" name='options'/>
             <label form='almuerzo'>Almuerzo</label>
-            <input id='almuerzo' type="radio"/>
+            <input id='almuerzo' type="radio" name='options'/>
             <label form='descanso'>Descanso</label>
-            <input id='descanso' type="radio"/>
+            <input id='descanso' type="radio" name='options'/>
             <label form='Reunión'>Reunión</label>
-            <input id='Reunión' type="radio"/>
+            <input id='Reunión' type="radio" name='options'/>
 
           </div>
         </section>
